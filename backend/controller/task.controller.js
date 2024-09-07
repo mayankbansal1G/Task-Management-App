@@ -66,9 +66,8 @@ export const testApi = (req, res)=> {
 
 export const getAllTasksByName = async (req,res)=>{
     const {taskName} = req.params;
-    console.log(taskName);
-
-    const regexPattern = new RegExp(taskName, 'i'); // 'i' makes the search case-insensitive
+    // console.log(taskName);
+    const regexPattern = new RegExp(taskName.toString().split("+").join(" "), 'i'); // 'i' makes the search case-insensitive
     try {
         const allTasks = await Task.find(
             {

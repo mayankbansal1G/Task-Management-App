@@ -7,7 +7,6 @@ import {
     testApi,
     updateTask
 } from "../controller/task.controller.js";
-import Task from "../model/task.model.js";
 
 const taskRouter = express.Router();
 
