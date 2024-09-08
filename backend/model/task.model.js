@@ -21,6 +21,11 @@ const taskSchema = new mongoose.Schema(
         taskPriority:{
             type: Number,
             required: true
+        },
+        user_id:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User',
+            required: true
         }
     },
     {

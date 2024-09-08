@@ -5,7 +5,6 @@ export const getAllTask = async (req, res)=> {
     try {
         const tasks = await Task.find({});
         res.status(200).json({"status": "success",data: tasks});
-
     } catch (error) {
         console.log(error);
         res.status(500).json({"status": "error", message: `${error.message} and Cannot get all tasks`});
