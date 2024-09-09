@@ -43,12 +43,19 @@ export const deleteTask = async (req, res)=> {
 
 export const addTask = async (req,res)=>{
     const task = req.body;
-    if(!task.name || !task.description || !task.taskStatus || !task.taskPriority || !task.dueDate){
+    if(!task.title || !task.content || !task.taskStatus || !task.taskPriority || !task.dueDate){
         // console.log(task);
         return res.status(400).json({success: false, message: "Please Provide All Fields"});
     }
     const newTask = new Task(req.body);
-
+    try {
+        const tempTask = await Task.find({title: {$regex: new RegExp(task.title)}});
+        if (!tempTask) {
+            return res.status(400).json({success: false,message: "Task Title With Same Title Exists"});
+        }
+    } catch (error) {
+        return res.status(500).json({success: false, message:"Internal Server Error"});
+    }
     try {
         await newTask.save();
         res.status(200).json({success: true, message: "Task Added"});
@@ -70,7 +77,7 @@ export const getAllTasksByName = async (req,res)=>{
     try {
         const allTasks = await Task.find(
             {
-                name: {$regex: regexPattern}
+                title: {$regex: regexPattern}
             }
         );
         res.status(200).json({success: true, data: allTasks});

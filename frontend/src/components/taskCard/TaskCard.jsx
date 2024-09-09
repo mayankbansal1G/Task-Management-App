@@ -1,25 +1,62 @@
-import moment from "moment";
-import React from "react";
 
-const TaskCard = ({ title = 'Untitled', date, content = '', onEdit, onDelete }) => {
+import moment from "moment";
+import { MdCreate, MdDelete } from "react-icons/md";
+
+const priorityArr = ["Low", "Medium", "High"];
+const statusArr = ["To Do","In Progress", "Completed"];
+const NoteCard = ({
+                      title,
+                      content,
+                      dueDate,
+                      taskStatus,
+                      taskPriority,
+                      onEdit,
+                      onDelete }) => {
+    const priorityValue = priorityArr[taskPriority - 1];
+    const statusValueStr = statusArr[taskStatus-1];
+    console.log(title);
     return (
-        <div className="border rounded p-4 bg-gray-800 text-white hover:shadow-xl transition-all ease-in-out dark:bg-gray-900 dark:border-gray-700">
+        <div className="border rounded p-4 bg-white hover:shadow-xl transition-all ease-in-out">
             <div className="flex items-center justify-between">
                 <div>
                     <h6 className="text-sm font-medium">{title}</h6>
-                    <span className="text-xs text-gray-400">{date ? moment(date).format('Do MMM YYYY') : '-'}</span>
-                </div>
-                <div>
-                    <button onClick={onEdit} className="mr-2">Edit</button>
-                    <button onClick={onDelete}>Delete</button>
                 </div>
             </div>
 
-            <p className="text-xs text-gray-300 mt-2">
-                {content.length > 60 ? `${content.slice(0, 60)}...` : content}
+            <p className="text-xs text-slate-600 mt-2">
+                {content?.slice(0, 60)}
             </p>
+
+            {/*Display the due date */}
+            <div className="mt-2">
+                <span className="text-xs text-slate-500">
+                    {/*Due Date: {dueDate ? moment(dueDate).format('Do MMM YYYY') : 'No due date'}*/}
+                    Due Date: {dueDate}
+                </span>
+            </div>
+
+            {/* Display priority */}
+            <div className="mt-2">
+                <span className="text-xs text-slate-500">
+                    Priority: {priorityValue ? priorityValue : 'Low'}
+                </span>
+            </div>
+
+            <div className="mt-2">
+                <span className="text-xs text-slate-500">
+                    Priority: {taskStatus ? statusValueStr : 'To Do'}
+                </span>
+            </div>
+
+            <div className="flex items-center justify-between mt-2">
+                <div className="flex items-center gap-2">
+                    <MdCreate className="icon-btn hover:text-green-600" onClick={onEdit}/>
+                    <MdDelete className="icon-btn hover:text-red-500" onClick={onDelete}/>
+                </div>
+            </div>
         </div>
     );
 };
 
-export default TaskCard;
+export default NoteCard;
+

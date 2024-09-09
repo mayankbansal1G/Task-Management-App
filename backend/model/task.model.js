@@ -2,16 +2,16 @@ import mongoose from 'mongoose';
 
 const taskSchema = new mongoose.Schema(
     {
-        name:{
+        title:{
             type: String,
             required: true
         },
-        description:{
+        content:{
             type: String,
             required: true
         },
         taskStatus:{
-            type: String,
+            type: Number,
             required: true
         },
         dueDate:{
@@ -22,11 +22,6 @@ const taskSchema = new mongoose.Schema(
             type: Number,
             required: true
         },
-        user_id:{
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'User',
-            required: true
-        }
     },
     {
         timestamps: true,

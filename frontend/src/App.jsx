@@ -54,7 +54,15 @@ function App() {
         <>
             <div className="grid grid-cols-4">
                 {allProducts.map((product,index) => (
-                    <TaskCard content={product.description} date={product.dueDate} title={product.name} onEdit={onEdit} onDelete={()=>{deleteProduct(product)}} key={index}/>
+                    <TaskCard
+                        title={product.title}
+                        content={product.content}
+                        dueDate={product.dueDate}
+                        statusValue={product.taskStatus}
+                        priority={product.taskPriority}
+                        onEdit={onEdit}
+                        onDelete={()=>{deleteProduct(product)}}
+                        key={index}/>
                 ))}
             </div>
         </>
