@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="tested basic task component directly inside app.jsx">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controller/task.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/task.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/model/task.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/task.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/taskCard/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/taskCard/TaskCard.jsx" afterDir="false" />
+    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Finalized Task Card and removed user from task model">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/inputs/StatusSelector.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +102,7 @@
       <updated>1725867570912</updated>
       <workItem from="1725867572059" duration="404000" />
       <workItem from="1725868029080" duration="7488000" />
-      <workItem from="1725890974233" duration="4481000" />
+      <workItem from="1725890974233" duration="4781000" />
     </task>
     <task id="LOCAL-00001" summary="tested basic task component directly inside app.jsx">
       <option name="closed" value="true" />
@@ -116,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725889122041</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finalized Task Card and removed user from task model">
+      <option name="closed" value="true" />
+      <created>1725899289642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725899289642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tested basic task component directly inside app.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="tested basic task component directly inside app.jsx" />
+    <MESSAGE value="Finalized Task Card and removed user from task model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalized Task Card and removed user from task model" />
   </component>
 </project>
