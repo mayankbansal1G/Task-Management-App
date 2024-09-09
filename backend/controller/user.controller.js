@@ -1,4 +1,3 @@
-import mongoose from "mongoose";
 import User from "../model/user.model.js";
 
 export const signUp = async (req, res) => {

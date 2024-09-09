@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="History">
+    <option name="requestHistoryStates">
+      <list>
+        <requestHistoryState>
+          <option name="dateTime" value="1725869699177" />
+          <option name="id" value="7e98f2a9-8b59-4a3a-bc07-aa184b13995c" />
+          <option name="request">
+            <requestState>
+              <option name="id" value="dd9007d7-9edd-41a8-a86b-712496922fce" />
+              <option name="method" value="GET" />
+              <option name="name" value="Draft" />
+              <option name="url" value="http://localhost:5001/api/tasks/all" />
+            </requestState>
+          </option>
+          <option name="response">
+            <responseState>
+              <option name="bodyBytesBase64" value="eyJzdGF0dXMiOiJzdWNjZXNzIiwiZGF0YSI6W3siX2lkIjoiNjZkYzQ0OTEwM2JlN2JiY2E1MTgyOGViIiwibmFtZSI6Ik5ldyBVcGRhdGUgdGFzayBuYW1lIDEiLCJkZXNjcmlwdGlvbiI6InRhc2tEZXNjcmlwdGlvbiAxIiwidGFza1N0YXR1cyI6InRvIGRvIDEiLCJkdWVEYXRlIjoiMTIvMDYvMjAwNSIsInRhc2tQcmlvcml0eSI6MiwiY3JlYXRlZEF0IjoiMjAyNC0wOS0wN1QxMjoxODoyNS45ODZaIiwidXBkYXRlZEF0IjoiMjAyNC0wOS0wN1QxMzoyNToyOS4xNDRaIiwiX192IjowfSx7Il9pZCI6IjY2ZGM0NzNhZDAzNWM4NzZkOWY4MDA5NSIsIm5hbWUiOiJUYXNrMVRlbXAgMiIsImRlc2NyaXB0aW9uIjoidGFza0Rlc2NyaXB0aW9uIDIiLCJ0YXNrU3RhdHVzIjoidG8gZG8gMiIsImR1ZURhdGUiOiIxMi8wNi8yMDA1IiwidGFza1ByaW9yaXR5IjoxLCJjcmVhdGVkQXQiOiIyMDI0LTA5LTA3VDEyOjI5OjQ2LjY1OVoiLCJ1cGRhdGVkQXQiOiIyMDI0LTA5LTA3VDEyOjI5OjQ2LjY1OVoiLCJfX3YiOjB9LHsiX2lkIjoiNjZkYzQ3NDlkMDM1Yzg3NmQ5ZjgwMDk3IiwibmFtZSI6Ik5ldyBVcGRhdGVkIDMiLCJkZXNjcmlwdGlvbiI6InRhc2tEZXNjcmlwdGlvbiAzIiwidGFza1N0YXR1cyI6InRvIGRvIDMiLCJkdWVEYXRlIjoiMTIvMDYvMjAwNSIsInRhc2tQcmlvcml0eSI6MiwiY3JlYXRlZEF0IjoiMjAyNC0wOS0wN1QxMjozMDowMS4yMTRaIiwidXBkYXRlZEF0IjoiMjAyNC0wOS0wN1QxMjozODo0My4zMTZaIiwiX192IjowfSx7Il9pZCI6IjY2ZGM1NDg0YTdjMWU1NmI5ZDY1MTI0MSIsIm5hbWUiOiJUYXNrMVRlbXAgNCIsImRlc2NyaXB0aW9uIjoidGFza0Rlc2NyaXB0aW9uIDQiLCJ0YXNrU3RhdHVzIjoic3RhdHVzIDQiLCJkdWVEYXRlIjoiMTIvMDYvMjAwNSIsInRhc2tQcmlvcml0eSI6MiwiY3JlYXRlZEF0IjoiMjAyNC0wOS0wN1QxMzoyNjoyOC44NzJaIiwidXBkYXRlZEF0IjoiMjAyNC0wOS0wN1QxMzoyNjoyOC44NzJaIiwiX192IjowfSx7Il9pZCI6IjY2ZGM1N2IyZWJjYzAzZmRjODE5N2EwMyIsIm5hbWUiOiJUYXNrIDUiLCJkZXNjcmlwdGlvbiI6IkRlc2MgNSIsInRhc2tTdGF0dXMiOiJ0YXNrU3RhdHVzIDUiLCJkdWVEYXRlIjoiMTIvMDYvMjAwNSIsInRhc2tQcmlvcml0eSI6MywiY3JlYXRlZEF0IjoiMjAyNC0wOS0wN1QxMzo0MDowMy4wMDFaIiwidXBkYXRlZEF0IjoiMjAyNC0wOS0wN1QxMzo0MDowMy4wMDFaIiwiX192IjowfV19" />
+              <option name="bodyString" value="{&#10;  &quot;status&quot;: &quot;success&quot;,&#10;  &quot;data&quot;: [&#10;    {&#10;      &quot;_id&quot;: &quot;66dc449103be7bbca51828eb&quot;,&#10;      &quot;name&quot;: &quot;New Update task name 1&quot;,&#10;      &quot;description&quot;: &quot;taskDescription 1&quot;,&#10;      &quot;taskStatus&quot;: &quot;to do 1&quot;,&#10;      &quot;dueDate&quot;: &quot;12/06/2005&quot;,&#10;      &quot;taskPriority&quot;: 2,&#10;      &quot;createdAt&quot;: &quot;2024-09-07T12:18:25.986Z&quot;,&#10;      &quot;updatedAt&quot;: &quot;2024-09-07T13:25:29.144Z&quot;,&#10;      &quot;__v&quot;: 0&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;66dc473ad035c876d9f80095&quot;,&#10;      &quot;name&quot;: &quot;Task1Temp 2&quot;,&#10;      &quot;description&quot;: &quot;taskDescription 2&quot;,&#10;      &quot;taskStatus&quot;: &quot;to do 2&quot;,&#10;      &quot;dueDate&quot;: &quot;12/06/2005&quot;,&#10;      &quot;taskPriority&quot;: 1,&#10;      &quot;createdAt&quot;: &quot;2024-09-07T12:29:46.659Z&quot;,&#10;      &quot;updatedAt&quot;: &quot;2024-09-07T12:29:46.659Z&quot;,&#10;      &quot;__v&quot;: 0&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;66dc4749d035c876d9f80097&quot;,&#10;      &quot;name&quot;: &quot;New Updated 3&quot;,&#10;      &quot;description&quot;: &quot;taskDescription 3&quot;,&#10;      &quot;taskStatus&quot;: &quot;to do 3&quot;,&#10;      &quot;dueDate&quot;: &quot;12/06/2005&quot;,&#10;      &quot;taskPriority&quot;: 2,&#10;      &quot;createdAt&quot;: &quot;2024-09-07T12:30:01.214Z&quot;,&#10;      &quot;updatedAt&quot;: &quot;2024-09-07T12:38:43.316Z&quot;,&#10;      &quot;__v&quot;: 0&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;66dc5484a7c1e56b9d651241&quot;,&#10;      &quot;name&quot;: &quot;Task1Temp 4&quot;,&#10;      &quot;description&quot;: &quot;taskDescription 4&quot;,&#10;      &quot;taskStatus&quot;: &quot;status 4&quot;,&#10;      &quot;dueDate&quot;: &quot;12/06/2005&quot;,&#10;      &quot;taskPriority&quot;: 2,&#10;      &quot;createdAt&quot;: &quot;2024-09-07T13:26:28.872Z&quot;,&#10;      &quot;updatedAt&quot;: &quot;2024-09-07T13:26:28.872Z&quot;,&#10;      &quot;__v&quot;: 0&#10;    },&#10;    {&#10;      &quot;_id&quot;: &quot;66dc57b2ebcc03fdc8197a03&quot;,&#10;      &quot;name&quot;: &quot;Task 5&quot;,&#10;      &quot;description&quot;: &quot;Desc 5&quot;,&#10;      &quot;taskStatus&quot;: &quot;taskStatus 5&quot;,&#10;      &quot;dueDate&quot;: &quot;12/06/2005&quot;,&#10;      &quot;taskPriority&quot;: 3,&#10;      &quot;createdAt&quot;: &quot;2024-09-07T13:40:03.001Z&quot;,&#10;      &quot;updatedAt&quot;: &quot;2024-09-07T13:40:03.001Z&quot;,&#10;      &quot;__v&quot;: 0&#10;    }&#10;  ]&#10;}" />
+              <option name="code" value="200" />
+              <option name="contentType" value="application/json; charset=utf-8" />
+              <option name="headers">
+                <list>
+                  <headerState>
+                    <option name="key" value="X-Powered-By" />
+                    <option name="value" value="Express" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Type" />
+                    <option name="value" value="application/json; charset=utf-8" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Content-Length" />
+                    <option name="value" value="1227" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="ETag" />
+                    <option name="value" value="W/&quot;4cb-ZYKQp0nxhJsKkVQThyKfUrM+fzI&quot;" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Date" />
+                    <option name="value" value="Mon, 09 Sep 2024 08:14:59 GMT" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Connection" />
+                    <option name="value" value="keep-alive" />
+                  </headerState>
+                  <headerState>
+                    <option name="key" value="Keep-Alive" />
+                    <option name="value" value="timeout=5" />
+                  </headerState>
+                </list>
+              </option>
+              <option name="id" value="7e98f2a9-8b59-4a3a-bc07-aa184b13995c" />
+              <option name="message" value="OK" />
+              <option name="prettyResponseType" value="JSON" />
+              <option name="rawBodyString" value="{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:[{&quot;_id&quot;:&quot;66dc449103be7bbca51828eb&quot;,&quot;name&quot;:&quot;New Update task name 1&quot;,&quot;description&quot;:&quot;taskDescription 1&quot;,&quot;taskStatus&quot;:&quot;to do 1&quot;,&quot;dueDate&quot;:&quot;12/06/2005&quot;,&quot;taskPriority&quot;:2,&quot;createdAt&quot;:&quot;2024-09-07T12:18:25.986Z&quot;,&quot;updatedAt&quot;:&quot;2024-09-07T13:25:29.144Z&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66dc473ad035c876d9f80095&quot;,&quot;name&quot;:&quot;Task1Temp 2&quot;,&quot;description&quot;:&quot;taskDescription 2&quot;,&quot;taskStatus&quot;:&quot;to do 2&quot;,&quot;dueDate&quot;:&quot;12/06/2005&quot;,&quot;taskPriority&quot;:1,&quot;createdAt&quot;:&quot;2024-09-07T12:29:46.659Z&quot;,&quot;updatedAt&quot;:&quot;2024-09-07T12:29:46.659Z&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66dc4749d035c876d9f80097&quot;,&quot;name&quot;:&quot;New Updated 3&quot;,&quot;description&quot;:&quot;taskDescription 3&quot;,&quot;taskStatus&quot;:&quot;to do 3&quot;,&quot;dueDate&quot;:&quot;12/06/2005&quot;,&quot;taskPriority&quot;:2,&quot;createdAt&quot;:&quot;2024-09-07T12:30:01.214Z&quot;,&quot;updatedAt&quot;:&quot;2024-09-07T12:38:43.316Z&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66dc5484a7c1e56b9d651241&quot;,&quot;name&quot;:&quot;Task1Temp 4&quot;,&quot;description&quot;:&quot;taskDescription 4&quot;,&quot;taskStatus&quot;:&quot;status 4&quot;,&quot;dueDate&quot;:&quot;12/06/2005&quot;,&quot;taskPriority&quot;:2,&quot;createdAt&quot;:&quot;2024-09-07T13:26:28.872Z&quot;,&quot;updatedAt&quot;:&quot;2024-09-07T13:26:28.872Z&quot;,&quot;__v&quot;:0},{&quot;_id&quot;:&quot;66dc57b2ebcc03fdc8197a03&quot;,&quot;name&quot;:&quot;Task 5&quot;,&quot;description&quot;:&quot;Desc 5&quot;,&quot;taskStatus&quot;:&quot;taskStatus 5&quot;,&quot;dueDate&quot;:&quot;12/06/2005&quot;,&quot;taskPriority&quot;:3,&quot;createdAt&quot;:&quot;2024-09-07T13:40:03.001Z&quot;,&quot;updatedAt&quot;:&quot;2024-09-07T13:40:03.001Z&quot;,&quot;__v&quot;:0}]}" />
+              <option name="size" value="1227" />
+              <option name="time" value="47" />
+            </responseState>
+          </option>
+          <option name="workspaceId" value="drafts" />
+        </requestHistoryState>
+      </list>
+    </option>
+  </component>
+</project>
