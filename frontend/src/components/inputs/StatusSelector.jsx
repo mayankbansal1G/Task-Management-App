@@ -1,13 +1,13 @@
 
-const StatusSelector = ({statusValue,setStatusValue}) => {
+const StatusSelector = ({taskStatus,setTaskStatus}) => {
     const handleChange = (event) => {
-        setStatusValue(event.target.value);
+        setTaskStatus(event.target.value);
     };
 
     return (
         <select
             id="status"
-                value={statusValue} // Bind the value to the state
+                value={taskStatus} // Bind the value to the state
                 onChange={handleChange} // Handle the change event
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         >
