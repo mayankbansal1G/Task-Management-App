@@ -3,13 +3,14 @@ import { MdAdd } from "react-icons/md";
 import TaskCard from "../../components/taskCard/TaskCard.jsx";
 import AddOrEditForm from "../../components/form/AddOrEditForm.jsx";
 import Toast from "../../components/toast/Toast.jsx";
-import Modal from "react-modal"
+import Modal from "react-modal";
 import SearchBar from "../../components/searchbar/SearchBar.jsx";
 
 const Home = () => {
     const [allTasks, setAllTasks] = useState([]);
     const [isSearch, setIsSearch] = useState(false);
     const [filterStatus, setFilterStatus] = useState(0);
+    const [filterPriority, setFilterPriority] = useState(0); // New state for priority
     const [openAddEditModal, setOpenAddEditModal] = useState({
         isShown: false,
         type: "add",
@@ -40,40 +41,37 @@ const Home = () => {
         });
     };
 
-    const handleFilterChange = (event) => {
+    const handleStatusFilterChange = (event) => {
         setFilterStatus(Number(event.target.value));
-        // getAllTasks();
+    };
+
+    const handlePriorityFilterChange = (event) => {
+        setFilterPriority(Number(event.target.value)); // Update priority filter state
     };
 
     // Get all tasks
     const getAllTasks = async () => {
         try {
             const response = await fetch("/api/tasks/all");
-            console.log(response);
             if (!response.ok) {
                 const error = await response.text();
-                console.log(error);
                 throw new Error("Error in response status " + error.message);
             }
             const data = await response.json();
-            console.log(data.data);
-
             if (data && data.data) {
-                console.log(`Filter Status ${filterStatus}`)
-                if (filterStatus == 0) {
-                    console.log("Value is 0");
-                    setAllTasks(data.data);
-                } else {
-                    console.log(`Status Value is ${filterStatus}`);
-                    let filteredTasks = [];
-                    data.data.map((task) => {
-                        if (task.taskStatus==filterStatus){
-                            filteredTasks.push(task);
-                        }
-                    });
-                    filteredTasks.forEach(task => console.log(task));
-                    setAllTasks(filteredTasks);
+                let filteredTasks = data.data;
+
+                // Apply status filter
+                if (filterStatus !== 0) {
+                    filteredTasks = filteredTasks.filter(task => task.taskStatus === filterStatus);
                 }
+
+                // Apply priority filter
+                if (filterPriority !== 0) {
+                    filteredTasks = filteredTasks.filter(task => task.taskPriority === filterPriority);
+                }
+
+                setAllTasks(filteredTasks);
             }
         } catch (error) {
             console.log("An unexpected error occurred. Please try again after some time.");
@@ -123,41 +121,55 @@ const Home = () => {
 
     const handleSearchChange = (target) => {
         setSearchQuery(target.value);
-        if(target.value.trim() !== "") {
+        if (target.value.trim() !== "") {
             onSearchTask(target.value.trim());
-        } else if (isSearch){
-            handleClearSearch()
+        } else if (isSearch) {
+            handleClearSearch();
         }
-    }
+    };
 
     useEffect(() => {
         getAllTasks();
-    }, [filterStatus]);
+    }, [filterStatus, filterPriority]); // Added filterPriority as a dependency
 
     return (
         <>
-            <div className="flex items-center justify-evenly w-full">
-                <SearchBar
-                    value={searchQuery}
-                    onChange={({target}) => {
-                        handleSearchChange(target)
-                    }}
-                    onClearSearch={handleClearSearch}
-                />
-                <form className="mx-auto flex items-center space-x-2">
-                    <label className="text-l" >Status</label>
-                    <select
-                        id="status"
-                        value={filterStatus} // Bind the value to the state
-                        onChange={handleFilterChange} // Handle the change event
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                    >
-                        <option value="0">All</option>
-                        <option value="1">To Do</option>
-                        <option value="2">In Progress</option>
-                        <option value="3">Done</option>
-                    </select>
-                </form>
+            <div className="w-full flex items-center justify-center">
+                <div className="flex items-center justify-evenly w-3/4 p-5">
+                    <SearchBar
+                        value={searchQuery}
+                        onChange={({target}) => handleSearchChange(target)}
+                        onClearSearch={handleClearSearch}
+                    />
+                    <form className="mx-auto flex items-center space-x-2">
+                        <label className="text-l">Status</label>
+                        <select
+                            id="status"
+                            value={filterStatus}
+                            onChange={handleStatusFilterChange}
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        >
+                            <option value="0">All</option>
+                            <option value="1">To Do</option>
+                            <option value="2">In Progress</option>
+                            <option value="3">Done</option>
+                        </select>
+                    </form>
+                    <form className="mx-auto flex items-center space-x-2">
+                        <label className="text-l">Priority</label>
+                        <select
+                            id="priority"
+                            value={filterPriority}
+                            onChange={handlePriorityFilterChange}
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        >
+                            <option value="0">All</option>
+                            <option value="1">Low</option>
+                            <option value="2">Medium</option>
+                            <option value="3">High</option>
+                        </select>
+                    </form>
+                </div>
             </div>
             <div className="container mx-auto">
                 {isSearch && (
@@ -166,20 +178,18 @@ const Home = () => {
 
                 {allTasks.length > 0 ? (
                     <div className="grid grid-cols-3 gap-4 mt-8">
-                        {allTasks.map((task) => {
-                            return (
-                                <TaskCard
-                                    title={task.title}
-                                    content={task.content}
-                                    dueDate={task.dueDate}
-                                    taskStatus={task.taskStatus}
-                                    taskPriority={task.taskPriority}
-                                    onEdit={() => handleEdit(task)}
-                                    onDelete={() => deleteTask(task)}
-                                    key={task._id}
-                                />
-                            );
-                        })}
+                        {allTasks.map((task) => (
+                            <TaskCard
+                                title={task.title}
+                                content={task.content}
+                                dueDate={task.dueDate}
+                                taskStatus={task.taskStatus}
+                                taskPriority={task.taskPriority}
+                                onEdit={() => handleEdit(task)}
+                                onDelete={() => deleteTask(task)}
+                                key={task._id}
+                            />
+                        ))}
                     </div>
                 ) : (
                     "Empty Tasks List"
@@ -188,16 +198,14 @@ const Home = () => {
 
             <button
                 className="w-16 h-16 flex items-center justify-center rounded-2xl bg-primary hover:bg-blue-600 absolute right-10 bottom-10"
-                onClick={() => {
-                    setOpenAddEditModal({ isShown: true, type: "add", data: null });
-                }}
+                onClick={() => setOpenAddEditModal({isShown: true, type: "add", data: null})}
             >
-                <MdAdd className="text-[32px] text-white" />
-                {/*<div className="flex items-center justify-center text-9xl" >Add</div>*/}
+                <MdAdd className="text-[32px] text-white"/>
             </button>
             <Modal
                 isOpen={openAddEditModal.isShown}
-                onRequestClose={() => {}}
+                onRequestClose={() => {
+                }}
                 style={{
                     overlay: {
                         backgroundColor: "rgba(0,0,0,0.2)",
@@ -209,9 +217,7 @@ const Home = () => {
                 <AddOrEditForm
                     type={openAddEditModal.type}
                     taskData={openAddEditModal.data}
-                    onClose={() => {
-                        setOpenAddEditModal({ isShown: false, type: "add", data: null });
-                    }}
+                    onClose={() => setOpenAddEditModal({ isShown: false, type: "add", data: null })}
                     showToastMessage={showToastMessage}
                     getAllTasks={getAllTasks}
                 />

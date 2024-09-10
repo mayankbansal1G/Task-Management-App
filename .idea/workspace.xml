@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added Search Functionality by title/name">
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/appLogo.png" afterDir="false" />
+    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added Navbar Component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +109,7 @@
       <workItem from="1725867572059" duration="404000" />
       <workItem from="1725868029080" duration="7488000" />
       <workItem from="1725890974233" duration="9797000" />
-      <workItem from="1725935285234" duration="11257000" />
+      <workItem from="1725935285234" duration="11937000" />
     </task>
     <task id="LOCAL-00001" summary="tested basic task component directly inside app.jsx">
       <option name="closed" value="true" />
@@ -170,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725949985110</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Navbar Component">
+      <option name="closed" value="true" />
+      <created>1725952156515</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725952156515</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +189,7 @@
     <MESSAGE value="Added main page and modified some components but not working" />
     <MESSAGE value="Added main page and modified some components but not working&#10;Main Page Working , edited controller to return res.send , tested addform" />
     <MESSAGE value="Added Search Functionality by title/name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Search Functionality by title/name" />
+    <MESSAGE value="Added Navbar Component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Navbar Component" />
   </component>
 </project>
