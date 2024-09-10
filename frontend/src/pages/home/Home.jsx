@@ -115,6 +115,7 @@ const Home = () => {
 
     const handleClearSearch = () => {
         setIsSearch(false);
+        setSearchQuery("");
         getAllTasks();
     };
 

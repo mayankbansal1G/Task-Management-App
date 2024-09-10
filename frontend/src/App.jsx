@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import TaskCard from "./components/taskCard/TaskCard.jsx";
 import Home from "./pages/home/Home.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
 
 function App() {
     // const [count, setCount] = useState(0);
@@ -52,20 +53,7 @@ function App() {
     // }, []); // Empty dependency array means this effect runs once after initial render
 
     return (
-        <>
-            {/*<div className="grid grid-cols-4">*/}
-            {/*    {allProducts.map((product,index) => (*/}
-            {/*        <TaskCard*/}
-            {/*            title={product.title}*/}
-            {/*            content={product.content}*/}
-            {/*            dueDate={product.dueDate}*/}
-            {/*            statusValue={product.taskStatus}*/}
-            {/*            priority={product.taskPriority}*/}
-            {/*            onEdit={onEdit}*/}
-            {/*            onDelete={()=>{deleteProduct(product)}}*/}
-            {/*            key={index}/>*/}
-            {/*    ))}*/}
-            {/*</div>*/}
+        <>  <Navbar />
             <Home />
         </>
     );

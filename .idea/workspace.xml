@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added main page and modified some components but not working&#10;Main Page Working , edited controller to return res.send , tested addform">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/searchbar/SearchBar.jsx" afterDir="false" />
+    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added Search Functionality by title/name">
+      <change afterPath="$PROJECT_DIR$/frontend/src/assets/appLogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "frontend-testing",
-    "last_opened_file_path": "C:/Offline Downloads/LatestTaskManagementMERNUpdated/LatestTaskManagementMERN/LatestTaskManagementMERN/frontend/src/components",
+    "last_opened_file_path": "C:/Offline Downloads/LatestTaskManagementMERNUpdated/LatestTaskManagementMERN/LatestTaskManagementMERN/frontend/src/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +58,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Offline Downloads\LatestTaskManagementMERNUpdated\LatestTaskManagementMERN\LatestTaskManagementMERN\frontend\src\assets" />
       <recent name="C:\Offline Downloads\LatestTaskManagementMERNUpdated\LatestTaskManagementMERN\LatestTaskManagementMERN\frontend\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -109,7 +112,7 @@
       <workItem from="1725867572059" duration="404000" />
       <workItem from="1725868029080" duration="7488000" />
       <workItem from="1725890974233" duration="9797000" />
-      <workItem from="1725935285234" duration="9228000" />
+      <workItem from="1725935285234" duration="11257000" />
     </task>
     <task id="LOCAL-00001" summary="tested basic task component directly inside app.jsx">
       <option name="closed" value="true" />
@@ -159,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725945650153</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Search Functionality by title/name">
+      <option name="closed" value="true" />
+      <created>1725949985110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725949985110</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +183,7 @@
     <MESSAGE value="Added Priority Selector like status selector , major update is reusable add or edit form  also added standard toast for main page" />
     <MESSAGE value="Added main page and modified some components but not working" />
     <MESSAGE value="Added main page and modified some components but not working&#10;Main Page Working , edited controller to return res.send , tested addform" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added main page and modified some components but not working&#10;Main Page Working , edited controller to return res.send , tested addform" />
+    <MESSAGE value="Added Search Functionality by title/name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Search Functionality by title/name" />
   </component>
 </project>
