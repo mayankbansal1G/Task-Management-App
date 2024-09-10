@@ -89,9 +89,10 @@ const Home = () => {
 
     const handleSearchChange = (target) => {
         setSearchQuery(target.value);
+        console.log(target.value);
         if (target.value.trim() !== "") {
             onSearchTask(target.value.trim());
-        } else if (isSearch) {
+        } else {
             handleClearSearch();
         }
     };
@@ -102,7 +103,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-20">
+         1   <div className="w-full flex items-center justify-between px-20  flex-col">
                 <div className="flex items-center w-full md:w-1/2 justify-center py-4">
                     <FilterForm
                         filterStatus={filterStatus}

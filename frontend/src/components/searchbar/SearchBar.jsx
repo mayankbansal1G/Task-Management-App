@@ -2,8 +2,10 @@ import React from "react";
 import { IoMdClose } from "react-icons/io";
 
 const SearchBar = ({ value, onChange, onClearSearch }) => {
+    // console.log(onClearSearch);
+    // console.log(value)
     return (
-        <div className="w-80 flex items-center bg-slate-100 rounded-md">
+        <div className="w-80 flex items-center bg-slate-100 rounded-md px-4">
             <input
                 type="text"
                 placeholder="Search Notes"
@@ -11,7 +13,7 @@ const SearchBar = ({ value, onChange, onClearSearch }) => {
                 value={value}
                 onChange={onChange}
             />
-            {value && <div className="text-xl text-slate-500 cursor-pointer hover:text-black hover:bg-hoverColor mr-3" onClick={onClearSearch}>Close</div>}
+            {value &&<IoMdClose className="text-xl text-slate-500 cursor-pointer hover:text-black mr-3" onClick={onClearSearch}/>}
         </div>
     );
 };
