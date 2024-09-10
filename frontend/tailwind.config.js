@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       display: ["Poppins", "sans-serif"],
@@ -11,8 +12,9 @@ export default {
     extend: {
       // Colors used in the project
       colors: {
-        primary: "#2B85FF",
-        secondary: "#EF863E",
+        primary: "#EF863E",
+        secondary: "#2B85FF",
+        hoverColor: "#ff6500"
       }
     },
   },

@@ -4,9 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added Navbar Component">
+    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added Status Filter">
+      <change afterPath="$PROJECT_DIR$/frontend/src/controller/AddOrEditForm.Controller.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/controller/Home.Controller.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/model/Task.Model.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/view/FilterFrom.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/view/TaskList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/view/components/form/AddOrDeleteForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/form/AddOrEditForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/form/AddOrEditForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/taskCard/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/taskCard/TaskCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "frontend-testing",
-    "last_opened_file_path": "C:/Offline Downloads/LatestTaskManagementMERNUpdated/LatestTaskManagementMERN/LatestTaskManagementMERN/frontend/src/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev (1).executor": "Run",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\saabb\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;mvc-structure&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Offline Downloads/LatestTaskManagementMERNUpdated/LatestTaskManagementMERN/LatestTaskManagementMERN&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev (1).executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\saabb\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Offline Downloads\LatestTaskManagementMERNUpdated\LatestTaskManagementMERN\LatestTaskManagementMERN\frontend\src\assets" />
       <recent name="C:\Offline Downloads\LatestTaskManagementMERNUpdated\LatestTaskManagementMERN\LatestTaskManagementMERN\frontend\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Offline Downloads\LatestTaskManagementMERNUpdated\LatestTaskManagementMERN\LatestTaskManagementMERN\frontend\src\model" />
       <recent name="C:\Offline Downloads\LatestTaskManagementMERNUpdated\LatestTaskManagementMERN\LatestTaskManagementMERN\frontend\src\components\toast" />
       <recent name="C:\Users\mayank.bansal1\Downloads\LatestTaskManagementMERN\LatestTaskManagementMERN\frontend\src" />
     </key>
@@ -109,7 +119,9 @@
       <workItem from="1725867572059" duration="404000" />
       <workItem from="1725868029080" duration="7488000" />
       <workItem from="1725890974233" duration="9797000" />
-      <workItem from="1725935285234" duration="11937000" />
+      <workItem from="1725935285234" duration="12551000" />
+      <workItem from="1725953434944" duration="2682000" />
+      <workItem from="1725960112103" duration="3552000" />
     </task>
     <task id="LOCAL-00001" summary="tested basic task component directly inside app.jsx">
       <option name="closed" value="true" />
@@ -175,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725952156515</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Status Filter">
+      <option name="closed" value="true" />
+      <created>1725953015370</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725953015370</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +210,7 @@
     <MESSAGE value="Added main page and modified some components but not working&#10;Main Page Working , edited controller to return res.send , tested addform" />
     <MESSAGE value="Added Search Functionality by title/name" />
     <MESSAGE value="Added Navbar Component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Navbar Component" />
+    <MESSAGE value="Added Status Filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Status Filter" />
   </component>
 </project>

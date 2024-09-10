@@ -1,8 +1,6 @@
-import { useEffect, useState } from 'react';
 import './App.css';
-import TaskCard from "./components/taskCard/TaskCard.jsx";
-import Home from "./pages/home/Home.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
+import HomeController from "./controller/Home.Controller.jsx";
 
 function App() {
     // const [count, setCount] = useState(0);
@@ -54,7 +52,7 @@ function App() {
 
     return (
         <>  <Navbar />
-            <Home />
+            <HomeController />
         </>
     );
 }

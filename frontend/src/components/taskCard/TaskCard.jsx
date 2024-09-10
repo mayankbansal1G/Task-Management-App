@@ -4,7 +4,7 @@ import { MdCreate, MdDelete } from "react-icons/md";
 
 const priorityArr = ["Low", "Medium", "High"];
 const statusArr = ["To Do","In Progress", "Completed"];
-const NoteCard = ({
+const TaskCard = ({
                       title,
                       content,
                       dueDate,
@@ -58,5 +58,5 @@ const NoteCard = ({
     );
 };
 
-export default NoteCard;
+export default TaskCard;
 
