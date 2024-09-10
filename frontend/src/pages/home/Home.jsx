@@ -4,6 +4,7 @@ import TaskCard from "../../components/taskCard/TaskCard.jsx";
 import AddOrEditForm from "../../components/form/AddOrEditForm.jsx";
 import Toast from "../../components/toast/Toast.jsx";
 import Modal from "react-modal"
+import SearchBar from "../../components/searchbar/SearchBar.jsx";
 
 const Home = () => {
     const [allTasks, setAllTasks] = useState([]);
@@ -100,12 +101,12 @@ const Home = () => {
     // Search for a Task
     const onSearchTask = async (query) => {
         try {
-            const response = await fetch("/byName/" + query);
+            const response = await fetch("/api/tasks/byName/" + query);
             const data = await response.json();
 
-            if (data && data.tasks) {
+            if (data && data.data) {
                 setIsSearch(true);
-                setAllTasks(data.tasks);
+                setAllTasks(data.data);
             }
         } catch (error) {
             console.log("An unexpected error occurred. Please try again.");
@@ -117,25 +118,46 @@ const Home = () => {
         getAllTasks();
     };
 
+    const [searchQuery, setSearchQuery] = useState("");
+
+    const handleSearchChange = (target) => {
+        setSearchQuery(target.value);
+        if(target.value.trim() !== "") {
+            onSearchTask(target.value.trim());
+        } else if (isSearch){
+            handleClearSearch()
+        }
+    }
+
     useEffect(() => {
         getAllTasks();
     }, [filterStatus]);
 
     return (
         <>
-            <form className="max-w-sm mx-auto">
-                <select
-                    id="status"
-                    value={filterStatus} // Bind the value to the state
-                    onChange={handleFilterChange} // Handle the change event
-                    className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                >
-                    <option value="0">All</option>
-                    <option value="1">To Do</option>
-                    <option value="2">In Progress</option>
-                    <option value="3">Done</option>
-                </select>
-            </form>
+            <div className="flex items-center justify-evenly w-full">
+                <SearchBar
+                    value={searchQuery}
+                    onChange={({target}) => {
+                        handleSearchChange(target)
+                    }}
+                    onClearSearch={handleClearSearch}
+                />
+                <form className="mx-auto flex items-center space-x-2">
+                    <label className="text-l" >Status</label>
+                    <select
+                        id="status"
+                        value={filterStatus} // Bind the value to the state
+                        onChange={handleFilterChange} // Handle the change event
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    >
+                        <option value="0">All</option>
+                        <option value="1">To Do</option>
+                        <option value="2">In Progress</option>
+                        <option value="3">Done</option>
+                    </select>
+                </form>
+            </div>
             <div className="container mx-auto">
                 {isSearch && (
                     <h3 className="text-lg font-medium mt-5">Search Results</h3>
