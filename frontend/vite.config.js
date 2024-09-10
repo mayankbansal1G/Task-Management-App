@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5001/api/tasks',
+        target: 'http://localhost:5001',
       },
     },
   }

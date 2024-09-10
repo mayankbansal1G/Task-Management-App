@@ -50,8 +50,8 @@ export const addTask = async (req,res)=>{
     }
     const newTask = new Task(req.body);
     try {
-        const tempTask = await Task.find({title: {$regex: new RegExp(task.title)}});
-        if (!tempTask) {
+        const tempTask= await Task.find({title: task.title});
+        if (tempTask.length > 0) {
             return res.status(400).json({success: false,message: "Task Title With Same Title Exists"});
         }
     } catch (error) {

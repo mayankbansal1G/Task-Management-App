@@ -44,7 +44,7 @@ const NoteCard = ({
 
             <div className="mt-2">
                 <span className="text-xs text-slate-500">
-                    Priority: {taskStatus ? statusValueStr : 'To Do'}
+                    Status: {taskStatus ? statusValueStr : 'To Do'}
                 </span>
             </div>
 

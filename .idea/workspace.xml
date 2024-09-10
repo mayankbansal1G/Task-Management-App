@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added Priority Selector like status selector , major update is reusable add or edit form  also added standard toast for main page">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" afterDir="false" />
+    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Added main page and modified some components but not working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controller/task.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/task.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/form/AddOrEditForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/form/AddOrEditForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/inputs/PrioritySelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/inputs/PrioritySelector.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/form/AddOrEditForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/form/AddOrEditForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/taskCard/TaskCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/taskCard/TaskCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +112,7 @@
       <workItem from="1725867572059" duration="404000" />
       <workItem from="1725868029080" duration="7488000" />
       <workItem from="1725890974233" duration="9797000" />
-      <workItem from="1725935285234" duration="3077000" />
+      <workItem from="1725935285234" duration="6776000" />
     </task>
     <task id="LOCAL-00001" summary="tested basic task component directly inside app.jsx">
       <option name="closed" value="true" />
@@ -146,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725903542227</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added main page and modified some components but not working">
+      <option name="closed" value="true" />
+      <created>1725938536722</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725938536722</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +165,7 @@
     <MESSAGE value="Finalized Task Card and removed user from task model" />
     <MESSAGE value="Added Status Selector that can be used in Form and filter for the main page" />
     <MESSAGE value="Added Priority Selector like status selector , major update is reusable add or edit form  also added standard toast for main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Priority Selector like status selector , major update is reusable add or edit form  also added standard toast for main page" />
+    <MESSAGE value="Added main page and modified some components but not working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added main page and modified some components but not working" />
   </component>
 </project>
