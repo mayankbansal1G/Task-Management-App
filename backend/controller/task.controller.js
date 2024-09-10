@@ -1,6 +1,7 @@
 import Task from "../model/task.model.js";
 import mongoose from "mongoose";
 
+const symbolArray = ['']
 export const getAllTask = async (req, res)=> {
     try {
         const tasks = await Task.find({});

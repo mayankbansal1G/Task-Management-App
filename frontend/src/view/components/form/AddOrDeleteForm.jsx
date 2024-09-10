@@ -58,7 +58,7 @@ const AddOrEditForm = ({ taskData, type, onClose, showToastMessage, getAllTasks 
                     type="text"
                     className="text-sm text-slate-950 outline-none bg-slate-50 p-2 rounded"
                     placeholder="Description"
-                    rows={10}
+                    rows={7}
                     value={content}
                     onChange={handleContentChange}
                 />

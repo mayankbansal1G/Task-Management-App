@@ -103,7 +103,7 @@ const Home = () => {
 
     return (
         <>
-         1   <div className="w-full flex items-center justify-between px-20  flex-col">
+            <div className="w-full flex items-center justify-between px-20  flex-col">
                 <div className="flex items-center w-full md:w-1/2 justify-center py-4">
                     <FilterForm
                         filterStatus={filterStatus}
@@ -137,7 +137,7 @@ const Home = () => {
                 onRequestClose={() => {}}
                 style={{ overlay: { backgroundColor: "rgba(0,0,0,0.2)" } }}
                 contentLabel="Example Modal"
-                className="w-[40%] max-h-3/4 bg-white rounded-md mx-auto mt-14 p-5 overflow-scroll"
+                className="max-h-3/4 bg-white rounded-md mx-auto mt-14 p-5 overflow-scroll w-[90%] md:w-[50%] sm:w-[70%] xl:w-[40%]"
             >
                 <AddOrEditForm
                     type={openAddEditModal.type}
