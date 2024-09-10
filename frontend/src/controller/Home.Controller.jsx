@@ -103,8 +103,8 @@ const Home = () => {
 
     return (
         <>
-            <div className="w-full flex items-center justify-between px-20  flex-col">
-                <div className="flex items-center w-full md:w-1/2 justify-center py-4">
+            <div className="w-full flex items-center justify-between px-20 flex-col xl:flex-row lg:flex-row md:flex-row 2xl:flex-row">
+                <div className="flex items-center md:w-1/2 justify-start py-4">
                     <FilterForm
                         filterStatus={filterStatus}
                         filterPriority={filterPriority}

@@ -1,8 +1,8 @@
 import React from "react";
 
 const FilterForm = ({ filterStatus, filterPriority, onStatusChange, onPriorityChange }) => (
-    <div className="flex justify-between items-center gap-10">
-        <form className="mx-auto flex items-center space-x-2">
+    <div className="flex justify-between items-center gap-10 flex-col sm:flex-row">
+        <form className="mx-auto flex items-center space-x-2 sm:mt-1">
             <label className="text-l">Status</label>
             <select
                 value={filterStatus}
@@ -15,7 +15,7 @@ const FilterForm = ({ filterStatus, filterPriority, onStatusChange, onPriorityCh
                 <option value="3">Done</option>
             </select>
         </form>
-        <form className="mx-auto flex items-center space-x-2">
+        <form className="mx-auto flex items-center space-x-2 sm:mt-1">
             <label className="text-l">Priority</label>
             <select
                 value={filterPriority}
