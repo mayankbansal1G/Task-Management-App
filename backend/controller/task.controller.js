@@ -4,7 +4,8 @@ import mongoose from "mongoose";
 export const getAllTask = async (req, res)=> {
     try {
         const tasks = await Task.find({});
-        res.status(200).json({success: true,message: "All tasks found ", data: tasks});
+        res.status(200).send({success: true, data: tasks, message: "All Tasks Found"});
+        // res.status(200).json({success: true,message: "All tasks found ", data: tasks});
     } catch (error) {
         console.log(error);
         res.status(500).json({success: false, message: `${error.message} and Cannot get all tasks`});

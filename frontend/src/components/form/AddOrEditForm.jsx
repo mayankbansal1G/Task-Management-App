@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
 import StatusSelector from "../inputs/StatusSelector.jsx";
-import PrioritySelector from "../inputs/PrioritySelector.js";
+import PrioritySelector from "../inputs/PrioritySelector.jsx";
 
-const AddEditNotes = ({
-                          noteData,
+const AddOrEditForm = ({
+                          taskData,
                           type,
                           onClose,
                           showToastMessage,
-                          getAllNotes,
+                          getAllTasks,
                       }) => {
-    const [title, setTitle] = useState(noteData?.title || "");
-    const [content, setContent] = useState(noteData?.content || "");
+    const [title, setTitle] = useState(taskData?.title || "");
+    const [content, setContent] = useState(taskData?.content || "");
     const [taskStatus, setTaskStatus] = useState(1);
     const [taskPriority, setTaskPriority] = useState(1);
     const [dueDate, setDueDate] = useState("");
 
     const [error, setError] = useState(null);
 
-    const addNewNote = async () => {
+    const addNewTask = async () => {
         try {
             const response = await fetch("/", {
                 method: "POST",
@@ -41,8 +41,8 @@ const AddEditNotes = ({
 
             const data = await response.json();
             if (data.data) {
-                showToastMessage("Note Added Successfully");
-                getAllNotes();
+                showToastMessage("task Added Successfully");
+                getAllTasks();
                 onClose();
             }
         } catch (error) {
@@ -50,8 +50,8 @@ const AddEditNotes = ({
         }
     };
 
-    const editNote = async () => {
-        const taskId = noteData._id;
+    const editTask= async () => {
+        const taskId = taskData._id;
 
         try {
             const response = await fetch(`/${taskId}`, {
@@ -75,8 +75,8 @@ const AddEditNotes = ({
 
             const data = await response.json();
             if (data.data) {
-                showToastMessage("Note Updated Successfully", 'update');
-                getAllNotes();
+                showToastMessage("Task Updated Successfully", 'update');
+                getAllTasks();
                 onClose();
             }
         } catch (error) {
@@ -84,7 +84,7 @@ const AddEditNotes = ({
         }
     };
 
-    const handleAddNote = () => {
+    const handleAddtask = () => {
         if (!title) {
             setError("Please enter the title");
             return;
@@ -112,9 +112,9 @@ const AddEditNotes = ({
         setError("");
 
         if (type === 'edit') {
-            editNote();
+            editTask();
         } else {
-            addNewNote();
+            addNewTask();
         }
     };
 
@@ -178,7 +178,7 @@ const AddEditNotes = ({
 
             <button
                 className="btn-primary font-medium mt-5 p-3"
-                onClick={handleAddNote}
+                onClick={handleAddtask}
             >
                 {type === 'add' ? "ADD" : "Update"}
             </button>
@@ -186,4 +186,4 @@ const AddEditNotes = ({
     );
 };
 
-export default AddEditNotes;
+export default AddOrEditForm;

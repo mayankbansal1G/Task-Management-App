@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import TaskCard from "./components/taskCard/TaskCard.jsx";
+import Home from "./pages/home/Home.jsx";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -11,7 +12,7 @@ function App() {
 
     const getAllProducts = async () => {
         try {
-            const response = await fetch('/api/tasks/all');
+            const response = await fetch('/all');
             // console.log(response);
             if (!response.ok) {
                 // const errorText = await response.text();
@@ -65,6 +66,7 @@ function App() {
                         key={index}/>
                 ))}
             </div>
+            {/*<Home />*/}
         </>
     );
 }
