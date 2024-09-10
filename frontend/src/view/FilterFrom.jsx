@@ -1,7 +1,7 @@
 import React from "react";
 
 const FilterForm = ({ filterStatus, filterPriority, onStatusChange, onPriorityChange }) => (
-    <div className="flex items-center justify-evenly w-3/4 p-5">
+    <div className="flex justify-between items-center gap-10">
         <form className="mx-auto flex items-center space-x-2">
             <label className="text-l">Status</label>
             <select

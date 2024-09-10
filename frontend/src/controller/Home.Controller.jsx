@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MdAdd } from "react-icons/md";
 import TaskList from "../view/TaskList.jsx";
 import FilterForm from "../view/FilterFrom.jsx";
-import AddOrEditForm from "../components/form/AddOrEditForm";
+import AddOrEditForm from "../../../frontend/src/view/components/form/AddOrDeleteForm.jsx";
 import Toast from "../components/toast/Toast";
 import Modal from "react-modal";
 import SearchBar from "../components/searchbar/SearchBar";
@@ -102,17 +102,19 @@ const Home = () => {
 
     return (
         <>
-            <div className="w-full flex items-center justify-center">
+            <div className="w-full flex flex-col md:flex-row items-center justify-between px-4 md:px-20">
+                <div className="flex items-center w-full md:w-1/2 justify-center py-4">
+                    <FilterForm
+                        filterStatus={filterStatus}
+                        filterPriority={filterPriority}
+                        onStatusChange={handleStatusFilterChange}
+                        onPriorityChange={handlePriorityFilterChange}
+                    />
+                </div>
                 <SearchBar
                     value={searchQuery}
                     onChange={({target}) => handleSearchChange(target)}
                     onClearSearch={handleClearSearch}
-                />
-                <FilterForm
-                    filterStatus={filterStatus}
-                    filterPriority={filterPriority}
-                    onStatusChange={handleStatusFilterChange}
-                    onPriorityChange={handlePriorityFilterChange}
                 />
             </div>
             <div className="container mx-auto">

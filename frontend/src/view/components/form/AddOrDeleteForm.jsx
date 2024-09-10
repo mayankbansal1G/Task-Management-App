@@ -23,14 +23,14 @@ const AddOrEditForm = ({ taskData, type, onClose, showToastMessage, getAllTasks 
     const handleContentChange = ({ target }) => {
         const newContent = target.value;
         if (countWords(newContent) > 70) {
-            setError("Description cannot exceed 70 words.");
+            setError("Description cannot exceed 70 letters.");
         } else {
             setError("");
             setContent(newContent);
         }
     };
 
-    const countWords = (text) => text.trim().split(/\s+/).length;
+    const countWords = (text) => text.length;
 
     return (
         <div className="relative">

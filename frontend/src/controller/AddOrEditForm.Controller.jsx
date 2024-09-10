@@ -26,7 +26,9 @@ export const handleSubmit = async (type, taskData, formValues, showToastMessage,
     try {
         if (type === 'edit') {
             const { _id } = taskData;
+            console.log("Before Update");
             await updateTask(_id, { title, content, taskStatus, taskPriority, dueDate });
+            console.log("After Update");
             showToastMessage("Task Updated Successfully", 'update');
         } else {
             await createTask({ title, content, taskStatus, taskPriority, dueDate });
@@ -39,4 +41,4 @@ export const handleSubmit = async (type, taskData, formValues, showToastMessage,
     }
 };
 
-const countWords = (text) => text.trim().split(/\s+/).length;
+const countWords = (text) => text.length;
