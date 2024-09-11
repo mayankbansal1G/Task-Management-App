@@ -45,8 +45,7 @@ A simple task management application that allows users to perform CRUD operation
 
 3. Create a `.env` file and configure your MongoDB connection string:
     ```env
-    MONGO_URI=mongodb://localhost:27017/taskmanager
-    PORT=5000
+    MONGO_URI=mongoDB://URL
     ```
 
 4. Start the backend server:
@@ -69,6 +68,23 @@ A simple task management application that allows users to perform CRUD operation
 3. Start the frontend development server:
     ```bash
     npm run dev
+    ```
+
+## Production
+
+1. Create a `.env` file and configure your MongoDB connection string:
+    ```env
+    MONGO_URI=mongoDB://URL
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm build
+    ```
+
+3. Start the frontend development server:
+    ```bash
+    npm run start
     ```
 
 ## API Endpoints
