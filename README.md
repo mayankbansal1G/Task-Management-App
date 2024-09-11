@@ -21,6 +21,8 @@ A simple task management application that allows users to perform CRUD operation
 
 - **Database**:
     - MongoDB
+## Live Url
+- Render : https://task-management-app-1o9e.onrender.com
 
 ## Getting Started
 
