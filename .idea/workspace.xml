@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Final Edit Added Production Scripts">
+    <list default="true" id="a0c04871-8c90-420b-8086-bbec29f0b25f" name="Changes" comment="Changed Styling for filters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/controller/Home.Controller.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/controller/Home.Controller.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/view/FilterFrom.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/view/FilterFrom.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +139,7 @@
       <workItem from="1725960112103" duration="10204000" />
       <workItem from="1725978508800" duration="2555000" />
       <workItem from="1725981099981" duration="87000" />
-      <workItem from="1725983491662" duration="4976000" />
+      <workItem from="1725983491662" duration="5371000" />
     </task>
     <task id="LOCAL-00001" summary="tested basic task component directly inside app.jsx">
       <option name="closed" value="true" />
@@ -263,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725986187779</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changed Styling for filters">
+      <option name="closed" value="true" />
+      <created>1725988847761</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1725988847761</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +291,7 @@
     <MESSAGE value="Form CSS Updated" />
     <MESSAGE value="Added readme file" />
     <MESSAGE value="Final Edit Added Production Scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final Edit Added Production Scripts" />
+    <MESSAGE value="Changed Styling for filters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Styling for filters" />
   </component>
 </project>

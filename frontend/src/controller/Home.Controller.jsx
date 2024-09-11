@@ -137,7 +137,7 @@ const Home = () => {
                 onRequestClose={() => {}}
                 style={{ overlay: { backgroundColor: "rgba(0,0,0,0.2)" } }}
                 contentLabel="Example Modal"
-                className="max-h-3/4 bg-white rounded-md mx-auto mt-14 p-5 overflow-scroll w-[90%] md:w-[50%] sm:w-[70%] xl:w-[40%]"
+                className="max-h-3/4 bg-white rounded-md mx-auto mt-14 p-5 overflow-hidden w-[90%] md:w-[50%] sm:w-[70%] xl:w-[40%]"
             >
                 <AddOrEditForm
                     type={openAddEditModal.type}
